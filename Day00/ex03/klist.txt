@@ -1,0 +1,5 @@
+Credentials cache: API:5225
+        Principal: alogarci@42MADRID.COM
+
+  Issued                Expires               Principal
+Nov 23 13:56:58 2020  Nov 23 23:56:54 2020  krbtgt/42MADRID.COM@42MADRID.COM
