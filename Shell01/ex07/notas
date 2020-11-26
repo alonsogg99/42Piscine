@@ -1,0 +1,7 @@
+Quitar comentarios      grep -v "#"
+Una de cada dos lineas  
+Invertir nombre usuario 
+Ordeanar por nombres de usuario alfabéticamente inverso sort -r
+Conservar solo nombres de usuario entre FT_LINE1 y FT_LINE2 ambos incluidos
+Separados por ,
+Que terminen con .
