@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/27 10:56:48 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/27 20:40:37 by alogarci         ###   ########.fr       */
+/*   Created: 2020/11/27 21:35:01 by alogarci          #+#    #+#             */
+/*   Updated: 2020/11/27 21:38:01 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_print_alphabet(void);
+
+int main(void)
 {
-	write(1, &c, 1);
+    ft_print_alphabet();
 }

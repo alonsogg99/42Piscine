@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/27 10:56:48 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/27 20:40:37 by alogarci         ###   ########.fr       */
+/*   Created: 2020/11/28 10:01:57 by alogarci          #+#    #+#             */
+/*   Updated: 2020/11/28 10:05:33 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_numbers(void)
 {
-	write(1, &c, 1);
+	int c;
+
+	c = '1';
+
+	while (c <= '9')
+	{
+		write(1, &c, 1);
+		c++;
+	}
 }
