@@ -6,23 +6,14 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:42:07 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 15:49:46 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/28 21:38:09 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(int);
-void	rush03(int);
-
-int	main()
+int		main(void)
 {
-	int x;
-	int y;
-
-	int a;
-	int b;
-
-	rush(5, 5);
-	return(0);
+	rush03(5, 5);
+	return (0);
 }
