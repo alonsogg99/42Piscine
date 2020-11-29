@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:47:03 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 21:38:42 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 10:10:52 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(char c);
 
 void	rush03(int x, int y)
 {

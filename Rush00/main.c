@@ -6,11 +6,13 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:42:07 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 21:38:09 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 10:08:50 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	rush03(int x, int y);
 
 int		main(void)
 {
