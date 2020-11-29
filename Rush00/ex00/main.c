@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:42:07 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/29 16:15:52 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 18:58:31 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	rush(int x, int y);
 
 int		main(void)
 {
-	rush(5, 5);
+	rush(1, 5);
 	return (0);
 }
