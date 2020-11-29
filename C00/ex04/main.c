@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 10:58:55 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 11:17:52 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 15:16:33 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(void)
 {
 	int n;
 
-	ft_is_negative(-1);
+	ft_is_negative(5);
 
 	return(0);
 }

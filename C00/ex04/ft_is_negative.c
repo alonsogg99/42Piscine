@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 11:02:30 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 11:10:39 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 15:16:08 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,12 @@
 
 void	ft_is_negative(int n)
 {
-	char o;
-	char p;
+	char r;
 
-	o = 'P';
-	p = 'N';
-
+	r = 'N';
 	if (n >= 0)
 	{
-		write(1, &o, 1);
+		r = 'P';
 	}
-	else
-	{
-		write(1, &p, 1);
-	}
+	write(1, &r, 1);
 }

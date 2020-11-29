@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 09:35:32 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 09:51:53 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 11:02:05 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ void	ft_print_reverse_alphabet(void)
 		c--;
 	}
 }
-

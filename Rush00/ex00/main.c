@@ -6,16 +6,16 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:42:07 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/29 10:08:50 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 16:15:52 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rush03(int x, int y);
+void	rush(int x, int y);
 
 int		main(void)
 {
-	rush03(5, 5);
+	rush(5, 5);
 	return (0);
 }

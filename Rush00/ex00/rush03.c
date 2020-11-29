@@ -6,13 +6,13 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 15:47:03 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/29 10:10:52 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 16:11:59 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	rush03(int x, int y)
+void	rush(int x, int y)
 {
 	int a;
 	int b;

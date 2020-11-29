@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 21:29:51 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/27 21:38:36 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 11:01:19 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@ void	ft_print_alphabet(char c)
 	char c;
 
 	c = 'a';
-
 	while (c <= 'z')
 	{
 		write(1, &c, 1);

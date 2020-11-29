@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/28 10:01:57 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/29 11:02:38 by alogarci         ###   ########.fr       */
+/*   Created: 2020/11/29 11:29:05 by alogarci          #+#    #+#             */
+/*   Updated: 2020/11/29 12:07:09 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_numbers(void)
-{
-	int c;
+void	ft_print_comb2(void);
 
-	c = '1';
-	while (c <= '9')
-	{
-		write(1, &c, 1);
-		c++;
-	}
+int	main(void)
+{
+	ft_print_comb2();
 }

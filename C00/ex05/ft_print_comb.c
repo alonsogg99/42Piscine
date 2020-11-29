@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 13:04:09 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/28 15:33:00 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/29 11:22:31 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,13 @@ void	ft_putchar(char x)
 	write(1, &x, 1);
 }
 
-void	ft_print_comb()
+void	ft_print_comb(void)
 {
 	int a;
 	int b;
 	int c;
 
 	a = '0' - 1;
-
 	while (++a <= '9')
 	{
 		b = a;
@@ -41,6 +40,7 @@ void	ft_print_comb()
 					ft_putchar(',');
 					ft_putchar(' ');
 				}
+				c++;
 			}
 		}
 	}
