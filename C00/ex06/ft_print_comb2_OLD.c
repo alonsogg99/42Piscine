@@ -5,50 +5,56 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/30 11:26:16 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/30 12:29:55 by alogarci         ###   ########.fr       */
+/*   Created: 2020/11/29 11:36:43 by alogarci          #+#    #+#             */
+/*   Updated: 2020/11/30 10:59:29 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_write_digit(char c)
+void	ft_putchar(char x)
 {
-	write(1, &c, 1);
+	write(1, &x, 1);
 }
 
-void	ft_write_number(int n)
+void	ft_display(int a, int b, int c, int d)
 {
-	if (n >= 10)
-	{
-		ft_write_digit(n / 10 + '0');
-		ft_write_digit(n % 10 + '0');
-	}
-	else
-	{
-		ft_write_digit('0');
-		ft_write_digit(n + '0');
-	}
+	ft_putchar(a);
+	ft_putchar(b);
+	ft_putchar(' ');
+	ft_putchar(c);
+	ft_putchar(d);
+	ft_putchar(',');
+	ft_putchar(' ');
 }
 
 void	ft_print_comb2(void)
 {
-	int a;
-	int b;
+	int n[4];
 
-	a = 0;
-
-	while (a != 98)
+	n[0] = '0';
+	while (n[0] <= '9')
 	{
-		b = a + 1;
-		while (b != 99)
+		n[1] = n[0];
+		while (n[1] <= '9')
 		{
-			ft_write_number(a);
-			ft_write_digit(' ');
-			ft_write_number(b);
-			ft_write_digit(',');
-			b++;
+			n[2] = n[1];
+			while (n[2] <= '9')
+			{
+				n[3] = n[2];
+				while (n[3] <= '9')
+				{
+					ft_display(n[0], n[1], n[2], n[3]);
+					n[3]++;
+				}
+				n[3] = '0';
+				n[2]++;
+			}
+			n[2] = '0';
+			n[1]++;
 		}
-		a++;
+		n[1] = '0';
+		n[0]++;
 	}
+	n[0] = '0';
 }
