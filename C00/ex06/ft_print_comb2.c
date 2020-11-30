@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 11:26:16 by alogarci          #+#    #+#             */
-/*   Updated: 2020/11/30 12:29:55 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/11/30 13:28:42 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,22 @@ void	ft_print_comb2(void)
 	int b;
 
 	a = 0;
-
-	while (a != 98)
+	while (a <= 98)
 	{
-		b = a + 1;
-		while (b != 99)
+		b = a;
+		while (b <= 99)
 		{
-			ft_write_number(a);
-			ft_write_digit(' ');
-			ft_write_number(b);
-			ft_write_digit(',');
+			if (a != b)
+			{
+				ft_write_number(a);
+				ft_write_digit(' ');
+				ft_write_number(b);
+				if (a != 98)
+				{
+					ft_write_digit(',');
+					ft_write_digit(' ');
+				}
+			}
 			b++;
 		}
 		a++;
