@@ -6,16 +6,29 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 11:35:47 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/01 12:14:08 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/01 13:26:35 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 void	ft_rev_int_tab(int *tab, int size)
 {
-	
-}
+	int i;
+	int s;
+	int t;
 
-int	main(void)
-{
-	ft_rev_int_tab(5, 4);
+	i = 0;
+	s = size - 1;
+
+
+	while (i < (size / 2))
+	{
+		t = tab[i];
+		tab[i] = tab[s];
+		tab[s] = t;
+		i++;
+		s--;
+		write(1, &tab, 1);
+	}
 }
