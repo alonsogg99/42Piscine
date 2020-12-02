@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/01 17:45:19 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 14:14:06 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/02 14:15:08 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/02 16:31:39 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_str_is_alpha(char *str)
 {
-	int x;
+	int n;
+	int i;
 
-	x = 0;
-	while (src[x] != '\0' && x != n)
+	n = 0;
+	if (str[n] != '\0')
 	{
-		dest[x] = src[x];
-		x++;
+		while (str[n] < 'A' || str[n] > 'z')
+		{
+			i++;
+		}
+		return (1);
 	}
-	dest[x] = '\0';
-	return (*dest);
+
+}
+
+int	main(void)
+{
+	char x[] = "Hola";
+
+	ft_str_is_alpha(x);
 }
