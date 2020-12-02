@@ -6,30 +6,29 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 14:15:08 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 16:31:39 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/02 17:19:13 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
-	int n;
 	int i;
 
-	n = 0;
-	if (str[n] != '\0')
+	i = 0;
+	while (*str != '\0')
 	{
-		while (str[n] < 'A' || str[n] > 'z')
+		if ((*str < 'A' || *str > 'Z') && (*str < 'a' || *str > 'z'))
 		{
 			i++;
 		}
+		*str++;
+	}
+	if (i > 0)
+	{
+		return (0);
+	}
+	else
+	{
 		return (1);
 	}
-
-}
-
-int	main(void)
-{
-	char x[] = "Hola";
-
-	ft_str_is_alpha(x);
 }
