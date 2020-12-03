@@ -6,22 +6,24 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 17:52:20 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 17:55:28 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/03 11:13:34 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_printable(char *str)
 {
 	int i;
+	int n;
 
 	i = 0;
-	while (*str != '\0')
+	n = 0;
+	while (str[n] != '\0')
 	{
-		if (*str < 32 || *str > 126)
+		if (str[n] < 32 || str[n] > 126)
 		{
 			i++;
 		}
-		*str++;
+		n++;
 	}
 	if (i > 0)
 	{

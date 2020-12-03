@@ -6,22 +6,24 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 14:15:08 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 17:19:13 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/03 11:10:11 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
 	int i;
+	int n;
 
 	i = 0;
-	while (*str != '\0')
+	n = 0;
+	while (str[n] != '\0')
 	{
-		if ((*str < 'A' || *str > 'Z') && (*str < 'a' || *str > 'z'))
+		if ((str[n] < 'A' || str[n] > 'Z') && (str[n] < 'a' || str[n] > 'z'))
 		{
 			i++;
 		}
-		*str++;
+		n++;
 	}
 	if (i > 0)
 	{

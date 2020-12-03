@@ -6,22 +6,24 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 17:30:35 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 17:43:18 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/03 11:11:09 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str)
 {
 	int i;
+	int n;
 
 	i = 0;
-	while (*str != '\0')
+	n = 0;
+	while (str[n] != '\0')
 	{
-		if (*str < '0' || *str > '9')
+		if (str[n] < '0' || str[n] > '9')
 		{
 			i++;
 		}
-		*str++;
+		n++;
 	}
 	if (i > 0)
 	{
