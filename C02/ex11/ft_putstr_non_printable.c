@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/03 16:05:44 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/04 11:41:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/04 11:46:24 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/04 11:55:26 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	int n;
-	int c;
+#include <unistd.h>
 
-	c = 0;
-	while (src[c] != '\0')
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putstr_non_printable(char *str)
+{
+	char			*hexa;
+	unsigned char	val;
+
+	hexa = "0123456789abcdef";
+	while (*str != '\0')
 	{
-		++c;
+		val = (unsigned char)*str;
+		if (val < 32 || val > 126)
+		{
+			ft_putchar('\\');
+			ft_putchar(hexa[val / 16]);
+			ft_putchar(hexa[val % 16]);
+		}
+			else ft_putchar(*str);
+		str++;
 	}
-	n = 0;
-	while (src[n] != '\0' && n < (size - 1))
-	{
-		dest[n] = src[n];
-		++n;
-	}
-	dest[n] = '\0';
-	return (c);
 }

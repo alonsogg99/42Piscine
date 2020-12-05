@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/03 16:05:44 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/04 11:41:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/04 13:17:11 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/04 13:39:42 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int n;
+	int s;
 	int c;
 
-	c = 0;
-	while (src[c] != '\0')
-	{
-		++c;
-	}
 	n = 0;
-	while (src[n] != '\0' && n < (size - 1))
+	s = 0;
+	c = 0;
+	while ((s1[n] != '\0' && s2[s] != '\0') && (c == 0))
 	{
-		dest[n] = src[n];
-		++n;
+		if (s1[n] == s2[s])
+		{
+			c += 0;
+			n++;
+			s++;
+		}
+		else if (s1[n] < s2[n])
+			c -= 1;
+		else if (s1[n] > s2[n])
+			c += 1;
 	}
-	dest[n] = '\0';
 	return (c);
+}
+
+int	main(void)
+{
+	char arr[] = "Hola";
+	char arr2[] = "Hola";
+	ft_strcmp(arr, arr2);
 }

@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:40:23 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/03 16:47:46 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/04 11:40:54 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strcapitalize(char *str)
 	n = 0;
 	while (str[n] != '\0')
 	{
-		if (n == 0 | (str[n] >= ' ' && str[n] < '/') || (str[n] >= ':' && str[n] <= '@'))
+		if (n == 0 | (str[n] >= ' ' && str[n] < '/') ||
+		(str[n] >= ':' && str[n] <= '@'))
 			check = 0;
 		else if (str[n] <= 0 && str[n])
 			check = 1;
