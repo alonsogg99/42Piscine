@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 13:17:11 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/04 13:39:42 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/06 16:17:59 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,4 @@ int	ft_strcmp(char *s1, char *s2)
 			c += 1;
 	}
 	return (c);
-}
-
-int	main(void)
-{
-	char arr[] = "Hola";
-	char arr2[] = "Hola";
-	ft_strcmp(arr, arr2);
 }

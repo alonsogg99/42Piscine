@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:31:02 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/03 11:31:20 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/06 16:01:12 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ char	*ft_strlowcase(char *str)
 		}
 		n++;
 	}
-	return (*str);
+	return (str);
 }

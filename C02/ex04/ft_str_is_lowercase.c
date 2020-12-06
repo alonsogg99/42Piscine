@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 17:45:13 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/02 17:48:04 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/06 15:50:34 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_str_is_lowercase(char *str)
 		{
 			i++;
 		}
-		*str++;
+		str++;
 	}
 	if (i > 0)
 	{

@@ -6,13 +6,13 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:16:27 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/03 11:29:10 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/06 15:55:49 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strupcase(char *str)
 {
-	int n;
+	unsigned int n;
 
 	n = 0;
 
@@ -24,5 +24,5 @@ char	*ft_strupcase(char *str)
 		}
 		n++;
 	}
-	return (*str);
+	return (str);
 }

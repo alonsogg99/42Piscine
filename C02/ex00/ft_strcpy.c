@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 16:20:27 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/01 17:23:00 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/06 15:36:59 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ char	*ft_strcpy(char *dest, char *src)
 		n++;
 	}
 	dest[n] = '\0';
-	return (*dest);
+	return (dest);
 }
