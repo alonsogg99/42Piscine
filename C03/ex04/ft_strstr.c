@@ -1,29 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/07 15:08:43 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/07 15:46:49 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/07 16:08:23 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/07 16:14:57 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strstr(char *str, char *to_find)
 {
-	int n;
-	int s;
-
-	n = 0;
-	while (dest[n] != '\0')
-		n++;
-	s = 0;
-	while (src[s] != '\0')
-	{
-		dest[n + s] = src[s];
-		s++;
-	}
-	dest[n + s] = '\0';
-	return (dest);
+	
 }
