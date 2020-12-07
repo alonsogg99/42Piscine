@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/01 17:45:19 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/07 12:19:20 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/07 14:32:13 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/07 14:51:03 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int x;
+	unsigned int	r;
+	int				s;
+	int				c;
 
-	x = 0;
-	while (src[x] != '\0' && x < n)
+	r = 0;
+	s = 0;
+	c = 0;
+	while ((s1[r] != '\0' && s2[s] != '\0') && (c == 0) && (r != n))
 	{
-		dest[x] = src[x];
-		x++;
+		if (s1[r] == s2[s])
+		{
+			c += 0;
+			r++;
+			s++;
+		}
+		else if (s1[r] < s2[r])
+			c -= 1;
+		else if (s1[r] > s2[r])
+			c += 1;
 	}
-	while (x < n)
-	{
-		dest[x] = '\0';
-		x++;
-	}
-	return (dest);
+	return (c);
 }

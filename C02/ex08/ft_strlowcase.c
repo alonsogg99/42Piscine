@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:31:02 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/06 16:01:12 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/07 12:30:57 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@ char	*ft_strlowcase(char *str)
 	int n;
 
 	n = 0;
-
 	while (str[n] != '\0')
 	{
 		if (str[n] >= 'A' && str[n] <= 'Z')

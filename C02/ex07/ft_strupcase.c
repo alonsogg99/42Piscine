@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:16:27 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/06 15:55:49 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/07 12:30:14 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@ char	*ft_strupcase(char *str)
 	unsigned int n;
 
 	n = 0;
-
 	while (str[n] != '\0')
 	{
 		if (str[n] >= 'a' && str[n] <= 'z')

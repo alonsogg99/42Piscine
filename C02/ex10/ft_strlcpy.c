@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 16:05:44 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/06 16:01:22 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/07 12:01:31 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		++c;
 	}
 	n = 0;
-	while (src[n] != '\0' && n < (size - 1))
+	while (src[n] != '\0' && n < size)
 	{
 		dest[n] = src[n];
 		++n;
