@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/04 13:17:11 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/09 11:34:31 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/08 16:26:25 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/08 16:33:33 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
 {
 	int n;
 
 	n = 0;
-	while ((s1[n] != '\0' && s2[n] != '\0') && (s1[n] == s2[n]))
+	while (str[n] != '\0')
 	{
+		ft_putchar(str[n]);
 		n++;
 	}
-	if (s1[n] == s2[n])
-	{
-		return (0);
-	}
-	else if (s1[n] != s2[n])
-	{
-		return (s1[n] - s2[n]);
-	}
-	return (0);
 }

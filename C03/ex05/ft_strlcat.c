@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/04 13:17:11 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/09 11:34:31 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/08 11:16:18 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/09 12:08:43 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int n;
+	unsigned int n;
+	unsigned int s;
 
 	n = 0;
-	while ((s1[n] != '\0' && s2[n] != '\0') && (s1[n] == s2[n]))
+	s = 0;
+	while (dest[n] != '\0')
 	{
 		n++;
 	}
-	if (s1[n] == s2[n])
+	while ((src[s] != '\0') && (s != size))
 	{
-		return (0);
-	}
-	else if (s1[n] != s2[n])
-	{
-		return (s1[n] - s2[n]);
+		dest[n] = src[s];
+		s++;
+		n++;
 	}
 	return (0);
 }
