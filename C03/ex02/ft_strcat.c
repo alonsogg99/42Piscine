@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 15:08:43 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/07 15:46:49 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/09 15:28:54 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	*ft_strcat(char *dest, char *src)
 {

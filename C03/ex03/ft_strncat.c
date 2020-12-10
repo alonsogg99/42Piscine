@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 15:51:57 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/09 12:02:55 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/09 15:28:58 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {

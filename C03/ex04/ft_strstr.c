@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/07 16:08:23 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/08 10:56:52 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/09 15:29:01 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {

@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 13:17:11 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/09 11:34:31 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/09 15:28:50 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
