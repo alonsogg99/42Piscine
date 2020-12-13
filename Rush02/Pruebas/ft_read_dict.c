@@ -6,10 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/12 18:12:36 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/13 10:30:17 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/13 15:12:10 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "rush.h"
 #include <fcntl.h>
 #include <unistd.h>
 

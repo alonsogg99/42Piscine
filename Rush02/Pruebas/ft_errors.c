@@ -6,9 +6,11 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/13 10:28:34 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/13 10:48:02 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/13 15:12:10 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "rush.h"
 
 void	ft_errors(int argc, char **argv)
 {

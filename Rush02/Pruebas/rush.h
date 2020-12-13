@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rush.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/12 16:30:14 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/13 15:12:11 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/13 15:10:28 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/13 15:17:53 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush.h"
-#include <stdio.h>
+#ifndef RUSH_H
+# define RUSH_H
 
-int main(int argc, char **argv)
+typedef struct s_list
 {
-    ft_errors(argc, argv);
-    char *dict;
-    dict = ft_read_dict();
-    //printf("%s\n", dict);
-}
+    int nb;
+    char *num;
+}               t_list;
+
+
+char    *ft_read_dict(void);
+void    ft_errors(int argc, char **argv);
+void    ft_putchar(char c);
+void    ft_putstr(char *str);
+
+#endif
