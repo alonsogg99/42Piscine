@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 11:16:18 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/10 11:13:45 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/12 11:53:20 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,4 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	}
 	dest[dest_size + i] = '\0';
 	return (src_size + dest_size);
-}
-
-int	main(void)
-{
-	char a[] = "hola";
-	char b[] = ", buenas";
-	ft_strlcat(a, b, 5);
-	return (0);
 }

@@ -1,27 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/07 14:32:13 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/12 10:31:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/13 11:08:43 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/13 11:21:43 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include <unistd.h>
+
+void	ft_putchar(char c)
 {
-	unsigned int i;
+	write(1, &c, 1);
+}
+
+void	ft_check_base(char *base)
+{
+	int i;
 
 	i = 0;
-	if (n == 0)
+	if (base[0] == '\0' || base[1] == '\0')
 	{
 		return (0);
 	}
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0') && (i < n - 1))
+	while (base[i] != '\0')
 	{
+		if (base[i] == '+' || base[i] == '-')
+		{
+			return (0);
+		}
 		i++;
 	}
-	return (s1[i] - s2[i]);
+}
+
+void	ft_putnbr_base(int nbr, char *base)
+{
+
 }

@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_read_dict.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/07 14:32:13 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/12 10:31:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/12 18:12:36 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/13 10:30:17 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	unsigned int i;
+#include <fcntl.h>
+#include <unistd.h>
 
-	i = 0;
-	if (n == 0)
-	{
-		return (0);
-	}
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0') && (i < n - 1))
-	{
-		i++;
-	}
-	return (s1[i] - s2[i]);
+char	*ft_read_dict(void)
+{
+	int			fd;
+	static char buffer[1024] = "";
+	int			leido;
+
+	fd = open("numbers.dict", O_RDONLY);
+	leido = read(fd, buffer, 1024);
+	close(fd);
+	return (buffer);
 }

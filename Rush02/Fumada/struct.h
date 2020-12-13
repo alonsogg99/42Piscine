@@ -1,27 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
+/*   By: amolina- <amolina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/07 14:32:13 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/12 10:31:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/12 21:16:19 by amolina-          #+#    #+#             */
+/*   Updated: 2020/12/12 22:18:19 by amolina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+struct dictionary
 {
-	unsigned int i;
-
-	i = 0;
-	if (n == 0)
-	{
-		return (0);
-	}
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0') && (i < n - 1))
-	{
-		i++;
-	}
-	return (s1[i] - s2[i]);
-}
+	int		key;
+	char	value[1000];
+};

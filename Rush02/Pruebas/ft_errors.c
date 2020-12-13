@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_errors.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/07 14:32:13 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/12 10:31:15 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/13 10:28:34 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/13 10:48:02 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+void	ft_errors(int argc, char **argv)
 {
-	unsigned int i;
-
-	i = 0;
-	if (n == 0)
+	if (argc < 2)
 	{
-		return (0);
+		ft_putstr("Error, too few arguments\n");
 	}
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0') && (i < n - 1))
-	{
-		i++;
-	}
-	return (s1[i] - s2[i]);
 }
