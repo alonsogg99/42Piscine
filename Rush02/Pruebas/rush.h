@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/13 15:10:28 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/13 15:17:53 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/13 17:53:00 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 typedef struct s_list
 {
-    int nb;
-    char *num;
+    int key;
+    char *value;
 }               t_list;
 
 
@@ -24,5 +24,9 @@ char    *ft_read_dict(void);
 void    ft_errors(int argc, char **argv);
 void    ft_putchar(char c);
 void    ft_putstr(char *str);
+void	ft_dict_searching(char *dict, int nb);
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+int	ft_atoi(char *str);
 
 #endif

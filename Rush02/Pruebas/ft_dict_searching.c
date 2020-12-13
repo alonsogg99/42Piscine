@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_errors.c                                        :+:      :+:    :+:   */
+/*   ft_dict_searching.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/13 10:28:34 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/13 17:26:31 by alogarci         ###   ########.fr       */
+/*   Created: 2020/12/13 17:27:36 by alogarci          #+#    #+#             */
+/*   Updated: 2020/12/13 18:08:41 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rush.h"
+#include <unistd.h>
 
-void	ft_errors(int argc, char **argv)
+void	ft_dict_searching(char *dict, int nb)
 {
-	if (argc < 2)
+	int i;
+
+	i = 0;
+	while (dict[i] != '\n')
 	{
-		ft_putstr("Error, too few arguments\n");
-	}
-	else if (argv[1][0] == '-')
-	{
-		ft_putstr("Error\n");
+		while (dict[i] != ':')
+		{
+			
+		}
 	}
 }
