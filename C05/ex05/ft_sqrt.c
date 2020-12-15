@@ -6,15 +6,17 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 13:46:28 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/14 16:44:13 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/15 11:41:01 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
 	int i;
+	int sq;
 
 	i = 1;
+	sq = 1;
 	if (nb <= 0)
 		return (0);
 	while (i * i < nb)

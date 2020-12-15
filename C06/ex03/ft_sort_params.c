@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 16:17:51 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/14 17:12:08 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/15 15:17:53 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,34 +49,41 @@ int		ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
+void	ft_sort_params(char **argv, int argc)
+{
+	int		i;
+	int		j;
+	char	*temp;
+
+	i = 1;
+	while (i < argc)
+	{
+		j = i + 1;
+		while (j < argc)
+		{
+			if (ft_strcmp(argv[i], argv[j]) > 0)
+			{
+				temp = argv[i];
+				argv[i] = argv[j];
+				argv[j] = temp;
+			}
+			j++;
+		}
+		i++;
+	}
+}
 
 int		main(int argc, char **argv)
 {
-	int n;
-	char *tmp;
-	int	f;
+	int i;
 
-	f = 1;
-
-	while (f)
+	ft_sort_params(argv, argc);
+	i = 1;
+	while (i < argc)
 	{
-		f = 0;
-		n = 0;
-		while (++n < argc - 1)
-		{
-			if (ft_strcmp(argv[n], argv[n + 1]) > 0)
-			{
-				tmp = argv[n];
-				argv[n] = argv[n + 1];
-				argv[n + 1] = tmp;
-			}
-		}
-	}
-	n = 0;
-	while (++n < argc)
-	{
-		ft_putstr(argv[n]);
+		ft_putstr(argv[i]);
 		ft_putchar('\n');
+		i++;
 	}
 	return (0);
 }
