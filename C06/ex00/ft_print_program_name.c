@@ -6,7 +6,7 @@
 /*   By: alogarci <alogarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/14 15:52:50 by alogarci          #+#    #+#             */
-/*   Updated: 2020/12/14 15:59:31 by alogarci         ###   ########.fr       */
+/*   Updated: 2020/12/16 13:28:01 by alogarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	ft_putstr(char *str)
 
 int		main(int argc, char **argv)
 {
+	(void)argc;
 	ft_putstr(argv[0]);
 	ft_putchar('\n');
 	return (0);
