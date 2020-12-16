@@ -28,7 +28,7 @@ These are all the inidividual projects and rushes made by me in the C-Pisicine o
 |:----:|:-----------------------------------|:-------------:|:------------------:|:----------|
 |  00  |Rush00					|	[Rush00/](https://github.com/alogarci/42Piscine/tree/master/Rush00)		| Negatives not well managed :( | Succeded with 115% |
 |  01  |Rush01					|	[Rush01/](https://github.com/alogarci/42Piscine/tree/master/Rush01)		| Any idea of backtracking? xD | Failed with 0% |
-|  02  |Rush02					|	Rush02/		| better to skip this one | Guess it |
+|  02  |Rush02					|	[Rush02/](https://github.com/alogarci/42Piscine/tree/master/Rush02)		| better to skip this one | Guess it |
 
 ## Exams
 
